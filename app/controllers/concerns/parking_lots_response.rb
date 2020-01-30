@@ -1,6 +1,9 @@
 module ParkingLotsResponse
-  def json_response(records, status = :ok)
-    render json: records.as_json(only: resposne_keys), status: status
+  def json_response(records, total_records, status = :ok)
+    response = {}
+    response[:count] = total_records
+    response[:carparks] = records.as_json(only: resposne_keys)
+    render json: response, status: status
   end
 
   private
