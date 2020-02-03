@@ -1,10 +1,13 @@
-#### System Requirements:
+### System Requirements:
   Ruby v2.7.0
+  
   Rails v6.0.2.1
+  
   MySQL v8.0.19
+  
   OS: Ubuntu/MacOS
 
-#### App Setup:
+### App Setup:
 
   **Clone Repo:**
   
@@ -28,13 +31,13 @@
 
   `$> rails s`
 
-#### RESTful APIs:
+### RESTful APIs:
 
-  Resource URL:
+  **Resource URL:**
   
     http://localhost:3000/carparks/nearest
 
-  Parameters: 
+  **Parameters:** 
   
   | Name | Requred | Type | Description | Default | Example |
   |------|-------|------|-------|------|-------|
@@ -46,12 +49,12 @@
   
 
 
-  Example Request:
+  **Example Request:**
 
   CURL -X GET -H "Accept: application/json" -H "Content-Type: application/json"  'http://localhost:4000/carparks/nearest?page=1&per_page=10&with_in=3&latitude=1.3365166&longitude=103.7766082'
 
 
-  Example Response:
+  **Example Response:**
 
   ```json
   {
